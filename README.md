@@ -47,6 +47,11 @@ and push to heroku
 
 ![image](https://user-images.githubusercontent.com/11976/30684707-b78b0fc0-9e88-11e7-9612-5611c3090ed7.png)
 
+
+## Bonus track:
+
+there is an slack commands ready to be implemented in `stars_bot/commands/hello.rb` file, just try `@yourbot hi` or `How is the weather in Chile?`
+
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
