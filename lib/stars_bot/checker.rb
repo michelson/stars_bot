@@ -44,7 +44,7 @@ module StarsBot
         room = "en sala `#{talk['room']}`:"
       end
    
-      "Atentos, ya empieza #{room} \"*#{talk['name'].upcase}*\" #{speaker} en menos de #{@minutes.to_i} minutos"
+      "Atentos, ya empieza #{room} \"*#{talk['name'].upcase}*\" #{speaker} en unos #{@minutes.to_i} minutos"
   
     end
   end
