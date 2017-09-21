@@ -1,6 +1,9 @@
 # StarsBot
 
+StarsBot is my implementation for slackbot on Synaptic StarsConf Challenge, 
+This bot implements a checking of talks and will notify to slack via `PushMessage` to slack channel minutes before the beginning of the talk.
 
+This implementation has a simple in memory cache system in order to avoid hit GraphQl intensively in each check, with a 300 TTL. The checking interval and notification time window are configurables. Also This application has a "test mode" in with the bot will notify every day a the given talk start time.
 
 ## Install
 
@@ -28,7 +31,7 @@ foreman start
 
 `bundle exec rspec`
 
-## Deploy
+## Deploy to Heroku
 
 set up this config variables in order to make the bot work
 
