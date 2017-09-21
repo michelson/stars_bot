@@ -1,5 +1,5 @@
 require "stars_bot/version"
-# require 'moneta'
+require 'moneta'
 require 'active_support'
 require 'active_support/core_ext'
 require 'celluloid'
@@ -16,15 +16,8 @@ module StarsBot
   autoload :Schedule, "stars_bot/schedule"
   autoload :Config, "stars_bot/schedule"
 
-  $store = nil #Moneta.new(:Memory)
-
-  def self.store
-    @store
-  end
-
-  def self.store=(value)
-    @store=value
-  end
+  $store = Moneta.new(:Memory)
+  $store['ids'] = []
 
   Slack.configure do |config|
     config.token = ENV['SLACK_API_TOKEN']
