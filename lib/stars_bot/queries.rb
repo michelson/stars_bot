@@ -5,12 +5,18 @@ module StarsBot
       query {
         
         allTimeSlots {
-          id,
+          id
           talkSet {
-            id,
+            id
             name
-          },
-          date,
+            category
+            room
+            speaker {
+              id
+              name
+            }
+          }
+          date
           start
         }
 
