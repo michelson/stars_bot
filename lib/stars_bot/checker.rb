@@ -20,10 +20,10 @@ module StarsBot
       return if timeslots.blank?
 
       timeslots['talkSet'].each do |talk|
-        
+        # ensure one notification only per id
         next if $store['ids'].include?(talk['id'])
         $store['ids'] = $store['ids'] << talk['id']
-        
+
         $client.chat_postMessage(
           channel: '#general', 
           text: self.message_format(talk), 

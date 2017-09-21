@@ -19,8 +19,6 @@ Thread.new do
   end
 end
 
-#Thread.new do
-  StarsBot::Schedule.new
-#end
+StarsBot::Schedule.new
 
 run StarsBot::WebServer
