@@ -42,4 +42,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency "sinatra"
   spec.add_dependency "dotenv"
   spec.add_dependency "celluloid-io"
+  # spec.add_dependency "moneta"
 end

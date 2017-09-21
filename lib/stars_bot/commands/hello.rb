@@ -3,7 +3,7 @@ module StarsBot
   module Commands
     class Hello < SlackRubyBot::Commands::Base
       command 'hi' do |client, data, _match|
-        client.say(channel: data.channel, text: 'hello madafaka')
+        client.say(channel: data.channel, text: 'hello')
       end
 
       command 'oe' do |client, data, _match|
