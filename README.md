@@ -32,6 +32,8 @@ set up this config variables in order to make the bot work
 
 `heroku config:set NOTIFY_WITH=10`
 
+`heroku config:add TEST_MODE=1` 
+
 and push to heroku
 
 `git push heroku master`
