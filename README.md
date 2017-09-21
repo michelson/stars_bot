@@ -1,5 +1,7 @@
 # StarsBot
 
+
+
 ## Install
 
 + checkout the repo 
@@ -22,6 +24,10 @@ bundle install
 foreman start
 ```
 
+## Run test
+
+`bundle exec rspec`
+
 ## Deploy
 
 set up this config variables in order to make the bot work
@@ -40,7 +46,9 @@ and push to heroku
 
 `git push heroku master`
 
-*NOTE:* the variable TEST_MODE=1 will send notifications every day without comparing day, if the TEST_MODE sets to 0, the application will compare the day and send the notification for the specific day
+**NOTE:** the variable TEST_MODE=1 will send notifications every day without comparing day, if the TEST_MODE sets to 0, the application will compare the day and send the notification for the specific day
+
+**NOTE 2:** In order to deploy in heroku and avoid idling on free plan set a monitoring service for the application, go to: `https://elements.heroku.com/addons/newrelic`
 
 
 ## example
