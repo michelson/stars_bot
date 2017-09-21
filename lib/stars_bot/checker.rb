@@ -9,7 +9,10 @@ module StarsBot
         # o.start == time && o.date == date
         # get timeslots that starts in ten or less minutes
         puts "#{o.date} #{o.start} -- #{date} #{time}"
-        @minutes = (Time.parse("#{o.date} #{o.start}") - Time.parse("#{date} #{time}") ) / 60 
+        #@minutes = (Time.parse("#{o.date} #{o.start}") - Time.parse("#{date} #{time}") ) / 60 
+        # TEST MODE:
+        @minutes = (Time.parse("#{date} #{o.start}") - Time.parse("#{date} #{time}") ) / 60 
+
         @minutes <= 10 && @minutes > 0
       end
 
