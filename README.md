@@ -22,6 +22,9 @@ foreman start
 ## Deploy
 
 `heroku config:add TZ="America/Santiago"`
+`heroku config:set SLACK_API_TOKEN=your-slack-token`
+`heroku config:set CHECK_EVERY=10`
+`heroku config:set NOTIFY_WITH=10`
 
 ## License
 
