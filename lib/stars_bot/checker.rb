@@ -6,9 +6,9 @@ module StarsBot
       
       timeslots = list['data']["allTimeSlots"].detect do |o|
         # get timeslots that starts in ten or less minutes
-        d = ENV['TEST_MODE'] == 1 ? date : o['date']
+        d = ENV['TEST_MODE'].to_i == 1 ? date : o['date']
         puts "#{d} #{o['start']} -- #{date} #{time}"
-        
+
         @minutes = (Time.parse("#{d} #{o['start']}") - Time.parse("#{date} #{time}") ) / 60 
         @minutes <= 10 && @minutes >= 0
       end
