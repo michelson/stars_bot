@@ -5,11 +5,13 @@
 + checkout the repo 
 + add an `.env` file in the root of the folder with the following:
 
+### Development environment only
 
 ```
 SLACK_API_TOKEN=your-slack-token
 CHECK_EVERY=10
 NOTIFY_WITH=10 
+TEST_MODE=1
 ```
 
 ## Run the application
@@ -37,6 +39,8 @@ set up this config variables in order to make the bot work
 and push to heroku
 
 `git push heroku master`
+
+*NOTE:* the variable TEST_MODE=1 will send notifications every day without comparing day, if the TEST_MODE sets to 0, the application will compare the day and send the notification for the specific day
 
 
 ## example
