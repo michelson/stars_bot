@@ -1,5 +1,5 @@
 require "stars_bot/version"
-require 'moneta'
+# require 'moneta'
 require 'active_support'
 require 'active_support/core_ext'
 require 'celluloid'
